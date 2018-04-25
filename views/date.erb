@@ -7,12 +7,7 @@
   <body>
     <h1>Today</h1>
     <p>
-      <% date = DateTime.now 
-          day = date.wday
-          month = date.month
-          day_num = date.day
-          year = date.year %>
-      The date is <%= day %>, <%= month %> <%= day_num %>, <%= year %>
+      The date is <%= Date.today.strftime("%A, %B %d, %Y") %>
     </p>
   </body>
 </html>
